@@ -10,7 +10,7 @@ const getAllTasks = async (req, res) => {
 };
 
 const createTask = async (req, res) => {
-  const task = req.body;
+  const task = req.body; //
 
   if (!task.task) {
     return res.redirect("/");
