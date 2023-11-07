@@ -1,9 +1,7 @@
-//script de backend javascript
-
 const express = require("express");
 const path = require("path");
 const routes = require("./routes/routes");
-const connectToDb = require("./database/db");
+const connectToDb = require("./database/Db");
 
 connectToDb();
 const app = express();
