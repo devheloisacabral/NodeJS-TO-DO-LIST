@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #202024;
+  background-color: #000000;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -15,7 +15,7 @@ body {
 header{}
 
 header {
-  background-color: #005290;
+  background-color: rgb(86, 0, 144);
   padding: 3rem;
   margin: 0.5rem;
   text-align: center;
@@ -41,7 +41,7 @@ button {
   padding: 0.6rem;
   width: 25%;
   background-color: #202024;
-  color: rgb(109, 109, 109);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 1rem;
   cursor: pointer;
@@ -52,8 +52,9 @@ button {
 }
 
 button:hover {
-  background-color: #004e14;
-  color: #fff;
+  background-color: #fbfe64;
+  color: black;
+  font-weight: 500;
 }
 
 section#tasks {
@@ -79,6 +80,7 @@ ul li {
 ul li a {
   text-decoration: none;
   color: #fff;
+  padding-left: 2rem;
 }
 
 ul li span {
@@ -218,4 +220,35 @@ div#btns a#btnYes {
 div#btns a#btnYes:hover {
   background-color: #00aa2a;
   color: #fff;
+}
+
+ul li.check-true{
+  background-color: #888;
+  color: white;
+  text-decoration: line-through;
+}
+
+ul li a.check-true::before{
+  content: "";
+  position: absolute;
+  border: white solid;
+  top: 17px;
+  left: 16px;
+  height: 15px;
+  width: 7px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+ul li a.check-false::before{
+  content: "";
+  position: absolute;
+  border: white solid;
+  top: 21px;
+  left: 16px;
+  height: 13px;
+  width: 13px;
+  border-width: 2px;
+  cursor: pointer;
 }
